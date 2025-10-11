@@ -36,11 +36,11 @@ const name = "NTColor";
 const input = "./src/NTColor.js";
 const data = [];
 
-data.push(createData(name, input, "./build/umd/NTColor.js", "umd", false));
-data.push(createData(name, input, "./build/umd/NTColor.min.js", "umd", true));
-data.push(createData(name, input, "./build/cjs/NTColor.js", "cjs", false));
-data.push(createData(name, input, "./build/cjs/NTColor.min.js", "cjs", true));
-data.push(createData(name, input, "./build/esm/NTColor.js", "esm", false));
-data.push(createData(name, input, "./build/esm/NTColor.min.js", "esm", true));
+data.push(createData(name, input, "./build/umd/" + name + ".js", "umd", false));
+data.push(createData(name, input, "./build/umd/" + name + ".min.js", "umd", true));
+data.push(createData(name, input, "./build/cjs/" + name + ".js", "cjs", false));
+data.push(createData(name, input, "./build/cjs/" + name + ".min.js", "cjs", true));
+data.push(createData(name, input, "./build/esm/" + name + ".js", "esm", false));
+data.push(createData(name, input, "./build/esm/" + name + ".min.js", "esm", true));
 
 export default data;
