@@ -73,12 +73,12 @@ declare class NTColor {
      * @param {number} [a = 1.0]
      * @returns {NTColor}
      */
-    static newColorNormalizedRGB(color_or_r: number | number[] | {
+    static newColorNormalizedRGB(color_or_r: number | {
         r?: number;
         g?: number;
         b?: number;
         a?: number;
-    }, g?: number, b?: number, a?: number, ...args: any[]): NTColor;
+    } | number[], g?: number, b?: number, a?: number, ...args: any[]): NTColor;
     /**
      * 指定した 0...255 の色情報からオブジェクトを作成する
      * @param {number|NTColorInputColorRGBA|number[]} color_or_aarrggbb
@@ -87,12 +87,12 @@ declare class NTColor {
      * @param {number} [a=255.0]
      * @returns {NTColor}
      */
-    static newColorRGB(color_or_aarrggbb: number | number[] | {
+    static newColorRGB(color_or_aarrggbb: number | {
         r?: number;
         g?: number;
         b?: number;
         a?: number;
-    }, g_or_is_load_alpha?: number | boolean, b?: number, a?: number, ...args: any[]): NTColor;
+    } | number[], g_or_is_load_alpha?: number | boolean, b?: number, a?: number, ...args: any[]): NTColor;
     /**
      * 色の型情報
      * @typedef {Object} NTColorInputColorHSVA
@@ -109,12 +109,12 @@ declare class NTColor {
      * @param {number} [a=1.0]
      * @returns {NTColor}
      */
-    static newColorNormalizedHSV(color_or_h: number | number[] | {
+    static newColorNormalizedHSV(color_or_h: number | {
         h?: number;
         s?: number;
         v?: number;
         a?: number;
-    }, s?: number, v?: number, a?: number, ...args: any[]): NTColor;
+    } | number[], s?: number, v?: number, a?: number, ...args: any[]): NTColor;
     /**
      * 指定した 0...360, 0...255 の色情報からオブジェクトを作成する
      * @param {number|NTColorInputColorHSVA|number[]} color_or_h
@@ -123,12 +123,12 @@ declare class NTColor {
      * @param {number} [a=255.0]
      * @returns {NTColor}
      */
-    static newColorHSV(color_or_h: number | number[] | {
+    static newColorHSV(color_or_h: number | {
         h?: number;
         s?: number;
         v?: number;
         a?: number;
-    }, s?: number, v?: number, a?: number, ...args: any[]): NTColor;
+    } | number[], s?: number, v?: number, a?: number, ...args: any[]): NTColor;
     /**
      * 色の型情報
      * @typedef {Object} NTColorInputColorHSLA
@@ -145,12 +145,12 @@ declare class NTColor {
      * @param {number} [a=1.0]
      * @returns {NTColor}
      */
-    static newColorNormalizedHSL(color_or_h: number | number[] | {
+    static newColorNormalizedHSL(color_or_h: number | {
         h?: number;
         s?: number;
         l?: number;
         a?: number;
-    }, s?: number, l?: number, a?: number, ...args: any[]): NTColor;
+    } | number[], s?: number, l?: number, a?: number, ...args: any[]): NTColor;
     /**
      * 指定した 0...360, 0...255 の色情報からオブジェクトを作成する
      * @param {number|NTColorInputColorHSLA|number[]} color_or_h
@@ -159,12 +159,12 @@ declare class NTColor {
      * @param {number} [a=255.0]
      * @returns {NTColor}
      */
-    static newColorHSL(color_or_h: number | number[] | {
+    static newColorHSL(color_or_h: number | {
         h?: number;
         s?: number;
         l?: number;
         a?: number;
-    }, s: number, l: number, a?: number, ...args: any[]): NTColor;
+    } | number[], s: number, l: number, a?: number, ...args: any[]): NTColor;
     /**
      * white
      * @returns {NTColor}
