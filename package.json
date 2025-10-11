@@ -1,6 +1,6 @@
 {
 	"name": "ntcolor",
-	"version": "2.0.4",
+	"version": "3.0.0",
 	"description": "Library for using color information in JavaScript.",
 	"keywords": [
 		"color"
@@ -11,15 +11,15 @@
 		"url": "git+https://github.com/natade-jp/js-ntcolor.git"
 	},
 	"license": "MIT",
-	"source": "./src/index.js",
-	"main": "./build/esm/index.js",
-	"types": "./build/dts/index.d.ts",
+	"source": "./src/NTColor.js",
+	"main": "./build/esm/NTColor.js",
+	"types": "./build/type/NTColor.d.ts",
 	"exports": {
 		".": {
-			"browser": "./build/umd/index.js",
-			"umd": "./build/umd/index.js",
-			"import": "./build/esm/index.js",
-			"require": "./build/cjs/index.js"
+			"browser": "./build/umd/NTColor.js",
+			"umd": "./build/umd/NTColor.js",
+			"import": "./build/esm/NTColor.js",
+			"require": "./build/cjs/NTColor.js"
 		}
 	},
 	"type": "module",
@@ -27,8 +27,8 @@
 		"build": "node ./scripts/package.build.js",
 		"test": "jest",
 		"test_target": "node ./scripts/package.test.js",
-		"dts": "npx tsc -p tsconfig.json",
-		"doc": "node ./scripts/package.doc.js"
+		"doc": "node ./scripts/package.doc.js",
+		"type": "node ./scripts/package.type.js"
 	},
 	"directories": {
 		"src": "./src",
@@ -63,19 +63,23 @@
 	},
 	"homepage": "https://github.com/natade-jp/js-ntcolor",
 	"devDependencies": {
-		"@lopatnov/rollup-plugin-uglify": "^2.1.5",
 		"@rollup/plugin-buble": "^1.0.2",
+		"@rollup/plugin-commonjs": "^28.0.6",
+		"@rollup/plugin-node-resolve": "^16.0.2",
+		"@rollup/plugin-terser": "^0.4.4",
 		"@types/jest": "^29.5.4",
+		"@types/node": "^24.7.1",
 		"babel-jest": "^29.6.4",
 		"babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
 		"esdoc": "^1.1.0",
 		"esdoc-standard-plugin": "^1.0.0",
-		"eslint": "^8.48.0",
+		"eslint": "^9.37.0",
 		"eslint-config-prettier": "^9.0.0",
 		"eslint-plugin-jest": "^27.2.3",
 		"jest": "^29.6.4",
 		"ntfile": "^1.0.0",
 		"prettier": "^3.0.2",
-		"rollup": "^3.28.1"
+		"rollup": "^3.29.5",
+		"typescript": "^5.9.3"
 	}
 }

@@ -730,11 +730,5 @@ window.esdocSearchIndex = [
     "class/src/NTColor.js~NTColor.html#static-method-newColorRGB",
     "src/NTColor.js~NTColor.newColorRGB",
     "method"
-  ],
-  [
-    "src/index.js",
-    "file/src/index.js.html",
-    "src/index.js",
-    "file"
   ]
 ]
