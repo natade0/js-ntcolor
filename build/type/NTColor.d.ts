@@ -3,7 +3,7 @@ export { NTColor as default };
  * NTColor.js
  *
  * AUTHOR:
- *  natade (https://github.com/natade-jp)
+ *  natade (https://github.com/natade0)
  *
  * LICENSE:
  *  The MIT license https://opensource.org/licenses/MIT
